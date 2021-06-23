@@ -14,4 +14,4 @@ flights1 %>%
 # data.table code
 
 flights1[carrier == "AA" & origin == "JFK" & air_time < 500 & distance < 2000, 
-         .(dest)] 
+         .(origin,dest,carrier,air_time, distance)] 
